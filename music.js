@@ -58,6 +58,31 @@ app.get('/artista/:nombre', async (req, res) => {
     }
 });
 
+/*agregue este endpoint para listar todos los artistas, ya que lo vi necesario 
+para hacer otro tipo de pruebas en postman, aun asi lo voy a comentar, porque no
+lo veo en las instrucciones de la asignacion*/
+/*app.get('/artistas', async (req, res) => {
+    try {
+        const [rows] = await pool.query(
+            'SELECT nombre, genero, origen FROM Artistas'
+        );
+    
+        if (rows.length === 0) {
+            return res.status(200).json({
+                status: 'success', message: 'No hay artistas registrados en el catálogo.',
+                data: []
+            });
+        }
+        res.json({
+            status: 'success', count: rows.length,data: rows
+        });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error interno del servidor al listar los artistas.');
+    }
+});*/
+
 app.post('/artista', async (req, res) => {
     const { nombre, genero, origen } = req.body;
     if (!nombre || !genero || !origen) {
