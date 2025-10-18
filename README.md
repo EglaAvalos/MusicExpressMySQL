@@ -12,12 +12,12 @@ catálogo de artistas musicales. El código cumple con todos los requisitos de l
 **Antes de ejecutar, debes:**
 Crear la Base de Datos: Ejecuta este script SQL en tu servidor MySQL. 
 ```sql 
-/*CREATE DATABASE IF NOT EXISTS catalogo_musica; USE catalogo_musica;
+CREATE DATABASE IF NOT EXISTS catalogo_musica; USE catalogo_musica;
 CREATE TABLE IF NOT EXISTS Artistas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     genero VARCHAR(50),
     origen VARCHAR(100)
-);*/
+);
 
 
