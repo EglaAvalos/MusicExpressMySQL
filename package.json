@@ -1,0 +1,13 @@
+{
+  "name": "catalogo-musica-api",
+  "version": "1.0.0",
+  "description": "Servidor web básico con Express y MySQL para Aso 09.",
+  "main": "music.js",
+  "scripts": {
+    "start": "node music.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}
