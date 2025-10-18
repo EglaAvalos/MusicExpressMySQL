@@ -6,8 +6,8 @@ const port = 3000;
 
 const dbConfig = {
     host: 'localhost',
-    user: 'root',
-    password: 'aliz',
+    user: '',
+    password: '',
     database: 'catalogo_musica'
 };
 
